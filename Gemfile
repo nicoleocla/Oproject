@@ -26,8 +26,17 @@ gem 'jbuilder', '~> 2.7'
 gem 'omniauth-google-oauth2'
 gem 'google-api-client'
 
+group :development, :test do
+  gem 'rspec-rails', '~> 4.0.1'
+end
 # devise
 gem 'devise'
+gem 'httparty'
+gem 'whenever', require: false
+
+#sidekiq
+gem 'sidekiq'
+gem 'sidekiq-failures', '~> 1.0'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
